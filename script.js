@@ -47,6 +47,12 @@
         // STEP 11:
         // Retrieve the first letter of the current name in the loop.
         // Use the string object's 'charAt' function. Since we are looking for
+        var firstLetter = function (){
+            for (var i = 0; i < names.length; i++) {
+                console.log(names[i].charAt(0).toLowerCase());
+            }
+        }
+        firstLetter(names);
         // names that start with either upper case or lower case 'J'/'j', call
         // string object's 'toLowerCase' method on the result so we can compare
         // to lower case character 'j' afterwards.
@@ -69,7 +75,13 @@
 
 
 
-
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+var firstLetter = function (){
+    for (var i = 0; i < names.length; i++) {
+        console.log(names[i].charAt(0).toLowerCase());
+    }
+}
+firstLetter();
 
 
 
@@ -81,6 +93,8 @@
 //     var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 //     for (var i = 0; i < names.length; i++) {
 //         console.log("hello" + names[i]);
+        var firstLetter = name.charAt(0)
+        console.log(firstLetter)
 //     }
 //
 // })();
